@@ -1,0 +1,21 @@
+<div class="container">
+  <form class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <input type="text" id="search-str" name="searchStr" [(ngModel)]="searchStr" (keyup)="search()" class="form-control" placeholder="Search for beer" autocomplete="off">
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </form>
+
+  <div *ngIf="loading; else content" class="row">
+    <div id="loading">
+      <bubbles></bubbles>
+    </div>
+  </div>
+
+  <ng-template #content>
+    <beer-list [beerList]="currentBeerList"></beer-list>
+  </ng-template>
+</div>

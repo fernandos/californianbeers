@@ -1,0 +1,27 @@
+<div *ngFor="let beerElem of beerList">
+    <div class="row">
+        <div class="col-md-4 col-lg-12">
+            <div class="panel panel-default panel-profile">
+                <bubbles></bubbles>
+                <div class="panel-body">  
+                    <div class="chopp-img"></div>
+                    <dl class="dl-horizontal">
+                        <dt>Name</dt>
+                        <dd>{{beerElem.Name}}</dd>
+                        <dt>ABV</dt>
+                        <dd>{{beerElem.Abv == "?"? "-" : beerElem.Abv}}</dd>
+                        <dt>Brewery</dt>
+                        <dd>{{beerElem.Brewery}}</dd>
+                        <dt>City</dt>
+                        <dd>{{beerElem.City}}</dd>
+                        <dt>Tags</dt>
+                        <dd *ngFor="let tag of beerElem.TagList">
+                            <a>{{tag.name}} ({{tag.count}}) beers of this kind</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
