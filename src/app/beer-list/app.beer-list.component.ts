@@ -4,8 +4,8 @@ import { Beer } from '../types/Beer';
 
 @Component({
   selector: 'beer-list',
-  templateUrl: './app.beer.component.html',
-  styleUrls: ['./app.beer.component.scss']
+  templateUrl: './app.beer-list.component.html',
+  styleUrls: ['./app.beer-list.component.scss']
 })
 export class BeerListComponent implements OnInit {
 

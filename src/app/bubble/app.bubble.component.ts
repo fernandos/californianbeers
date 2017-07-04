@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component,  } from '@angular/core';
+
 
 @Component({
-  selector: 'bubbles',
+  selector: 'beer-bubbles',
   templateUrl: './app.bubble.component.html',
   styleUrls: ['./app.bubble.component.scss']
 })

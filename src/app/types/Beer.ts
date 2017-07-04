@@ -1,10 +1,10 @@
 export class Beer {
-    public Name: string;
-    public Abv: string;
-    public Brewery: string;
-    public City: string;
-    public Ibu: string;
-    public Srm: string;
-    public Tags: string;
-    public TagList = [];
+    public name: string;
+    public abv: string;
+    public brewery: string;
+    public city: string;
+    public ibu: string;
+    public srm: string;
+    public tags: string;
+    public tagList?: Array<Object>;
 }

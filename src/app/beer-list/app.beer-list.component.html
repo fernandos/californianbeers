@@ -2,21 +2,21 @@
     <div class="row">
         <div class="col-md-4 col-lg-12">
             <div class="panel panel-default panel-profile">
-                <bubbles></bubbles>
+                <beer-bubbles></beer-bubbles>
                 <div class="panel-body">  
                     <div class="chopp-img"></div>
                     <dl class="dl-horizontal">
                         <dt>Name</dt>
-                        <dd>{{beerElem.Name}}</dd>
+                        <dd>{{beerElem.name}}</dd>
                         <dt>ABV</dt>
-                        <dd>{{beerElem.Abv == "?"? "-" : beerElem.Abv}}</dd>
+                        <dd>{{beerElem.abv == "?"? "-" : beerElem.abv}}</dd>
                         <dt>Brewery</dt>
-                        <dd>{{beerElem.Brewery}}</dd>
+                        <dd>{{beerElem.brewery}}</dd>
                         <dt>City</dt>
-                        <dd>{{beerElem.City}}</dd>
+                        <dd>{{beerElem.city}}</dd>
                         <dt>Tags</dt>
-                        <dd *ngFor="let tag of beerElem.TagList">
-                            <a>{{tag.name}} ({{tag.count}}) beers of this kind</a>
+                        <dd *ngFor="let tag of beerElem.tagList">
+                            <a>{{tag.name}} ({{tag.count}} like this)</a>
                         </dd>
                     </dl>
                 </div>
