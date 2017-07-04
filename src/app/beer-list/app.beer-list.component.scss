@@ -1,0 +1,22 @@
+.chopp-img {
+  max-width: 100px;
+  margin-top: -70px;
+  margin-bottom: 5px;
+  border: 3px solid #F2C077;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+
+.chopp-img::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url("../../assets/pint.png");
+  background-size: 70px 70px;
+  left: 13px;
+  top: 10px;
+}
